@@ -1,0 +1,27 @@
+ATUALIZACAO DA FIGURA 7.2 - RELATORIOS FLEET
+
+1. Extraia o ZIP na pasta principal do projeto, mantendo a subpasta modelo/.
+   Substitua gerar_relatorios.py, o modelo, os arquivos .bat e INSTRUCOES.md.
+   A atualizacao NAO traz Controle_Ativos.xlsx, para preservar os dados que
+   voce ja editou no PC.
+
+2. Na pasta fotos/TAG/, coloque de 1 a 8 imagens opcionais do ativo como
+   recebido com nomes foto_antes_adicional1.jpg,
+   foto_antes_adicional2.png, ... foto_antes_adicional8.jpg.
+   Pode pular numeros. Extensoes aceitas: jpg, jpeg, png, webp, tif e tiff.
+   Nao use duas extensoes para o mesmo numero.
+
+3. A foto_antes da Figura 7.1 continua obrigatoria. Se nao houver fotos
+   adicionais, a Figura 7.2 e sua legenda nao aparecem no relatorio gerado.
+
+4. Feche a planilha no Excel. Execute ATUALIZAR_EVIDENCIAS.bat para atualizar
+   as colunas de evidencias, agora ate AE. As oito colunas da Figura 7.2
+   ficam sem cor quando vazias e verdes ao encontrar o arquivo.
+   GERAR_RELATORIOS.bat atualiza a planilha antes de gerar os documentos.
+
+5. Instale as dependencias, se necessario:
+   py -3 -m pip install -r requirements.txt
+
+O script confere nomes e presenca de arquivos, mas nao verifica se a foto
+retrata de fato o estado do ativo ao recebimento. Confirme o conteudo e a
+paginacao no Word/PDF antes de enviar o relatorio.

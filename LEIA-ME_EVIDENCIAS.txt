@@ -1,0 +1,25 @@
+PAINEL DE EVIDENCIAS - RELATORIOS FLEET
+
+Copie Controle_Ativos.xlsx, atualizar_evidencias.py,
+ATUALIZAR_EVIDENCIAS.bat e GERAR_RELATORIOS.bat para a pasta que contem
+gerar_relatorios.py, fotos/ e checklists/. Faça uma copia da sua planilha
+antes de substituir a versao anterior se a editou depois do envio.
+
+Feche Controle_Ativos.xlsx no Excel antes de atualizar.
+Dois cliques em ATUALIZAR_EVIDENCIAS.bat atualizam os checks.
+Dois cliques em GERAR_RELATORIOS.bat atualizam os checks e geram relatorios.
+No PowerShell, tambem funciona: py -3 atualizar_evidencias.py
+
+Pode passar outros locais ao script Python:
+py -3 atualizar_evidencias.py --planilha Controle_Ativos.xlsx --fotos fotos --checklists checklists
+
+VERDE / ✓ = arquivo localizado; VERMELHO / ✗ = evidencia obrigatoria ausente;
+VERMELHO / ! = arquivos conflitantes; sem cor = foto adicional opcional ausente.
+Chicotes 1 e obrigatorio; chicotes 2, 3 e 4 sao opcionais. O arquivo legado
+foto_chicotes.png conta como chicotes 1, mas nao misture com o padrao numerado.
+O checklist pode ser checklist_assinado.png ou PDF nomeado pela TAG, como
+"CH14 - Checklist comissionamento.pdf", na pasta checklists/ ou fotos/CH14/.
+O PDF prevalece sobre a imagem, como na geracao do relatorio.
+
+O script confere existencia e nomes/extensoes, sem avaliar qualidade ou
+conteudo da foto. Confira a evidencia antes de marcar GERAR=SIM.
